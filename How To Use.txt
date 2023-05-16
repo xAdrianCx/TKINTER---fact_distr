@@ -1,0 +1,20 @@
+HOW TO USE:
+
+1. Selectati fisierul de import. Trebuie sa fie un fisier excel cu extensia .xlsx.
+2. Selectati directorul de export(locatia unde doriti sa salvati fisierele).
+3. Apasati butonul Generare Facturi.
+
+
+EXTRAS:
+
+Pentru a schimba tariful de distributie, pentru a adauga/modifica un numar de constract sau pentru a schimba numele userului(apare pe factura pentru semnare), se foloseste fisierul de config din locatia Facturi Distributie\config\cfg.ini.
+
+1. Pentru a schimba tariful de distributie: 
+	- se deschide fisierul cfg.ini din locatia: Facturi Distributie\config\cfg.ini
+	- sub sectiunea [TARIFF], se modifica fiecare valoare dupa "=" cu valoarea dorita.
+2. Pentru a adauga/modifica un contract de distributie:
+	Pentru a adauga un nou contract cu un furnizor nou:
+		- se deschide fisierul cfg.ini din locatia: Facturi Distributie\config\cfg.ini
+		- sub sectiunea [SUPPLIERS], dupa ultima pozitie se adauga numele furnizorului nou exact asa cum este in fisierul "Raport distributie anexa3.xlsx" urmat de "=" si numarul de contract.
+	Pentru a modifica numarul de contract al unui furnizor existent:
+		- se cauta numele furnizorului in cauza, iar in partea dreapa, dupa "=" inlocuim numarul de constract cu cel dorit.
